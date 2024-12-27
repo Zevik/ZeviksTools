@@ -35,6 +35,7 @@ export default function Footer() {
             </a>
           </div>
           <p>© 2024 Zevik's Tools</p>
+          <p>כל הזכויות שמורות ל-&apos;זאביק&apos; Tools.</p>
         </div>
       </div>
     </footer>

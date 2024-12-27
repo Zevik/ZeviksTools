@@ -33,6 +33,14 @@ export default function Contact() {
             </a>
           </div>
 
+          {/* Email Input */}
+          <div className="flex justify-center mb-8">
+            <input
+              placeholder="הכנס 'דוא\"ל' כאן"
+              className="px-4 py-2 rounded-lg text-black"
+            />
+          </div>
+
           {/* Copyright */}
           <div className="text-sm text-gray-400">
             <p>© {new Date().getFullYear()} Zevik's Tools. כל הזכויות שמורות.</p>
