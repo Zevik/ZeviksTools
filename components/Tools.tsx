@@ -2,7 +2,7 @@ const tools = [
   {
     title: ["GMAC", "איסוף ושמירת תשובות"],
     description: "התוסף הפופולרי שאוסף ושומר את התשובות לשאלות הכניסה לקבוצה שלכם. כלי חובה לכל מנהל קבוצה!",
-    link: "/tools/gmac"  // עדכון הנתיב
+    link: "/tools/gmac"
   },
   {
     title: ["Groups Monitor", "סקאן-גרופ"],
