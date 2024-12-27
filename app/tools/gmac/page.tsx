@@ -7,8 +7,8 @@ import { useState } from 'react'
 
 const features = [
   {
-    title: "חיסכון בזמן",
-    description: "איסוף אוטומטי של כל התשובות בלחיצת כפתור",
+    title: &quot;חיסכון בזמן&quot;,
+    description: &quot;איסוף אוטומטי של כל התשובות בלחיצת כפתור&quot;,
     icon: Clock
   },
   {
@@ -24,14 +24,14 @@ const features = [
 ];
 
 const steps = [
-  "מוודאים שיש את כל הכלים בהם נוכל לאסוף פרטים בקבוצה שנרצה",
-  "מקליקים על הקישור של הקבוצה שלכם בגוגל שיטס",
-  "תקבלו אישור על כל חבר שנוסף לקבוצה שלכם",
-  "התשובות נשמרות אוטומטית בגוגל שיטס שלכם להמשמרת"
+  &quot;מוודאים שיש את כל הכלים בהם נוכל לאסוף פרטים בקבוצה שנרצה&quot;,
+  &quot;מקליקים על הקישור של הקבוצה שלכם בגוגל שיטס&quot;,
+  &quot;תקבלו אישור על כל חבר שנוסף לקבוצה שלכם&quot;,
+  &quot;התשובות נשמרות אוטומטית בגוגל שיטס שלכם להמשמרת&quot;
 ];
 
 function CopyEmailButton() {
-  const email = 'fb.tools.zevik@gmail.com';
+  const email = &apos;fb.tools.zevik@gmail.com&apos;;
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
