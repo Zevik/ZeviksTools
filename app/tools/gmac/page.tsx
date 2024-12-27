@@ -1,9 +1,10 @@
-'use client'
-import Header from '@/components/Header',
-import FaqAccordion from '@/components/FaqAccordion',
-import VideoPlayer from '@/components/VideoPlayer',
-import { Briefcase, Shield, Clock } from 'lucide-react',
-import { useState } from 'react'
+'use client';
+
+import Header from '@/components/Header';
+import FaqAccordion from '@/components/FaqAccordion';
+import VideoPlayer from '@/components/VideoPlayer';
+import { Briefcase, Shield, Clock } from 'lucide-react';
+import { useState } from 'react';
 
 const features = [
   {
