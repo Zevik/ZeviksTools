@@ -1,14 +1,16 @@
 export default function Contact() {
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8 animate-fade-in">צרו קשר</h2>
+          <h2 className="text-3xl font-bold mb-8">צרו קשר</h2>
           
           {/* Contact Buttons */}
           <div className="flex flex-col md:flex-row gap-6 justify-center mb-12">
             <a 
               href="https://wa.me/972546609385"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-lg font-medium transition-all transform hover:scale-105"
             >
               <i className="fab fa-whatsapp text-2xl"></i>
@@ -16,6 +18,8 @@ export default function Contact() {
             </a>
             <a 
               href="mailto:fb.tools.zevik@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl text-lg font-medium transition-all transform hover:scale-105"
             >
               <i className="far fa-envelope text-2xl"></i>
@@ -43,7 +47,7 @@ export default function Contact() {
 
           {/* Copyright */}
           <div className="text-sm text-gray-400">
-            <p>© {new Date().getFullYear()} Zevik's Tools. כל הזכויות שמורות.</p>
+            <p>&copy; {new Date().getFullYear()} Zevik&apos;s Tools</p>
           </div>
         </div>
       </div>
