@@ -1,14 +1,14 @@
 'use client'
-import Header from '@/components/Header'
-import FaqAccordion from '@/components/FaqAccordion'
-import VideoPlayer from '@/components/VideoPlayer'
-import { Briefcase, Shield, Clock } from 'lucide-react'
+import Header from '@/components/Header',
+import FaqAccordion from '@/components/FaqAccordion',
+import VideoPlayer from '@/components/VideoPlayer',
+import { Briefcase, Shield, Clock } from 'lucide-react',
 import { useState } from 'react'
 
 const features = [
   {
-    title: &quot;חיסכון בזמן&quot;,
-    description: &quot;איסוף אוטומטי של כל התשובות בלחיצת כפתור&quot;,
+    title: "חיסכון בזמן",
+    description: "איסוף אוטומטי של כל התשובות בלחיצת כפתור",
     icon: Clock
   },
   {
@@ -24,14 +24,14 @@ const features = [
 ];
 
 const steps = [
-  &quot;מוודאים שיש את כל הכלים בהם נוכל לאסוף פרטים בקבוצה שנרצה&quot;,
-  &quot;מקליקים על הקישור של הקבוצה שלכם בגוגל שיטס&quot;,
-  &quot;תקבלו אישור על כל חבר שנוסף לקבוצה שלכם&quot;,
-  &quot;התשובות נשמרות אוטומטית בגוגל שיטס שלכם להמשמרת&quot;
+  "מוודאים שיש את כל הכלים בהם נוכל לאסוף פרטים בקבוצה שנרצה",
+  "מקליקים על הקישור של הקבוצה שלכם בגוגל שיטס",
+  "תקבלו אישור על כל חבר שנוסף לקבוצה שלכם",
+  "התשובות נשמרות אוטומטית בגוגל שיטס שלכם להמשמרת"
 ];
 
 function CopyEmailButton() {
-  const email = &apos;fb.tools.zevik@gmail.com&apos;;
+  const email = 'fb.tools.zevik@gmail.com';
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
