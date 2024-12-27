@@ -56,6 +56,9 @@ export default function Testimonials() {
                   <span className="text-sm text-gray-500">{testimonial.role}</span>
                 )}
               </div>
+              <p>
+                {`אני לא יכול להאמין ש&apos;תוסף&apos; כזה באמת קיים!`}
+              </p>
             </div>
           ))}
         </div>
