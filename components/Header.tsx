@@ -1,16 +1,16 @@
-'use client'
-import { useState } from 'react'
+'use client';
+import { useState } from 'react';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-md z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="/" className="text-2xl font-bold text-gray-800">
-            Zevik's Tools
-          </a>
+            Zevik&apos;s Tools
+          </a>;
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6">
@@ -38,5 +38,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }

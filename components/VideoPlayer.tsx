@@ -13,7 +13,7 @@ export default function VideoPlayer({ videoId }: VideoPlayerProps) {
           title="GMAC הדגמת התוכנה"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        />
+        />;
       </div>
       
       {/* Loading Overlay */}

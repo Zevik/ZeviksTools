@@ -13,7 +13,7 @@ export default function ToolCard({ icon, title, description }: ToolCardProps) {
       <div className="mt-4 opacity-0 hover:opacity-100 transition-opacity">
         <button className="text-blue-500 hover:text-blue-700">
           למד עוד →
-        </button>
+        </button>;
       </div>
     </div>
   )

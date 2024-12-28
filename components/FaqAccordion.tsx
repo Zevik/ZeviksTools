@@ -1,10 +1,10 @@
-'use client'
-import { useState } from 'react'
+'use client';
+import { useState } from 'react';
 
 const faqItems = [
   {
-    question: "האם ניתן להשתמש אם התוסף עבור כמה קבוצות שאני מנהל/ת?",
-    answer: "כן. ובנוסף, עבור כל קבוצה התוסף יצור קובץ נפרד שאליו ישמרו הנתונים."
+    question: 'האם ניתן להשתמש אם התוסף עבור כמה קבוצות שאני מנהל/ת?',
+    answer: 'כן. ובנוסף, עבור כל קבוצה התוסף יצור קובץ נפרד שאליו ישמרו הנתונים.'
   },
   {
     question: 'האם התשובות נאספות באופן אוטומטי לחלוטין?',
@@ -78,5 +78,5 @@ export default function FaqAccordion() {
         </div>
       ))}
     </div>
-  )
+  );
 }

@@ -1,10 +1,11 @@
-import './globals.css'
-import type { Metadata } from 'next'
+import React from 'react';
+import './globals.css';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Zevik's Tools",
+  title: 'Zevik\'s Tools',
   description: 'הכלים והתוכנות המתקדמים ביותר לבעלי עסקים, למשרדי דיגיטל ולמנהלי קבוצות'
-}
+};
 
 export default function RootLayout({
   children,
@@ -21,5 +22,5 @@ export default function RootLayout({
       </head>
       <body className="bg-gray-50">{children}</body>
     </html>
-  )
+  );
 }
