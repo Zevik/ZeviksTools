@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-8" id="contact">
@@ -34,10 +36,10 @@ export default function Footer() {
               <i className="fab fa-twitter"></i>
             </a>
           </div>
-          <p>© 2024 Zevik's Tools</p>
+          <p>© 2024 Zevik&apos;s Tools</p>
           <p>כל הזכויות שמורות ל-&apos;זאביק&apos; Tools.</p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
