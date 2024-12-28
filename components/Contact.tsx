@@ -37,13 +37,6 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="flex justify-center mb-8">
-            <input
-              placeholder="הכנס &apos;דוא&quot;ל&apos; כאן"
-              className="px-4 py-2 rounded-lg text-black"
-            />
-          </div>
-
           <div className="text-sm text-gray-400">
             <p>&copy; {new Date().getFullYear()} Zevik&apos;s Tools</p>
           </div>

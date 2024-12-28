@@ -17,15 +17,6 @@ export default function Footer() {
                 <i className="fab fa-whatsapp ml-2"></i>
                 ליצירת קשר בוואטסאפ
               </a>
-              <a 
-                href="mailto:fb.tools.zevik@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-indigo-600 text-white px-6 py-3 w-52 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors"
-              >
-                <i className="far fa-envelope ml-2"></i>
-                ליצירת קשר באימייל
-              </a>
             </div>
           </div>
           <div className="social-buttons mb-4">

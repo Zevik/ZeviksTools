@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 
 const testimonials = [
   {
@@ -25,6 +28,20 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        const { scrollLeft, clientWidth, scrollWidth } = scrollRef.current;
+        const newScrollLeft = scrollLeft + clientWidth >= scrollWidth ? 0 : scrollLeft + clientWidth;
+        scrollRef.current.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
+      }
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className='py-24 bg-gradient-to-br from-gray-50 to-blue-50'>
       <div className='container mx-auto px-4'>
@@ -32,7 +49,10 @@ export default function Testimonials() {
           תודה שהמלצתם עלי
         </h2>
         
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+        <div 
+          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 overflow-x-auto'
+          ref={scrollRef}
+        >
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
@@ -60,9 +80,6 @@ export default function Testimonials() {
                   <span className='text-sm text-gray-500'>{testimonial.role}</span>
                 )}
               </div>
-              <p>
-                {'אני לא יכול להאמין ש\'תוסף\' כזה באמת קיים!'}
-              </p>
             </div>
           ))}
         </div>
