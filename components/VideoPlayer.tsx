@@ -19,5 +19,5 @@ export default function VideoPlayer({ videoId }: VideoPlayerProps) {
       {/* Loading Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 pointer-events-none" />
     </div>
-  )
+  );
 }

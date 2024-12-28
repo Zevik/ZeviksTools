@@ -16,5 +16,5 @@ export default function ToolCard({ icon, title, description }: ToolCardProps) {
         </button>;
       </div>
     </div>
-  )
+  );
 }

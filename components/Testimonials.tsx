@@ -1,7 +1,9 @@
+import Image from 'next/image';
+
 const testimonials = [
   {
     name: 'תהילה סיטון וזוהרת ניר-כהן',
-    role: 'מנהלות קהילת \'פודוס - פודי׳ז שומרי כשרות\'',
+    role: 'מנהלות קהילת &#39;פודוס - פודי׳ז שומרי כשרות&#39;',
     text: 'אם אתם מנהלי קבוצה...',
     image: '/images/תהילה.png'
   },
@@ -38,15 +40,17 @@ export default function Testimonials() {
             >
               <div className='relative mb-6'>
                 <div className='w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-blue-100'>
-                  <img 
+                  <Image 
                     src={testimonial.image}
                     alt={testimonial.name}
+                    width={96}
+                    height={96}
                     className='w-full h-full object-cover'
                   />
                 </div>
               </div>
               <blockquote className='text-gray-600 text-center mb-4'>
-                '{testimonial.text}'
+                {testimonial.text}
               </blockquote>
               <div className='text-center'>
                 <cite className='font-semibold text-gray-800 block'>
@@ -57,7 +61,7 @@ export default function Testimonials() {
                 )}
               </div>
               <p>
-                {`אני לא יכול להאמין ש\'תוסף\' כזה באמת קיים!`}
+                {'אני לא יכול להאמין ש\'תוסף\' כזה באמת קיים!'}
               </p>
             </div>
           ))}
