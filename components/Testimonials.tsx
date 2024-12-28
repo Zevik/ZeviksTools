@@ -50,13 +50,13 @@ export default function Testimonials() {
         </h2>
         
         <div 
-          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 overflow-x-auto'
+          className='flex overflow-x-auto snap-x snap-mandatory'
           ref={scrollRef}
         >
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className='bg-white rounded-2xl shadow-lg p-6 transform hover:scale-105 transition-all duration-300'
+              className='bg-white rounded-2xl shadow-lg p-6 transform hover:scale-105 transition-all duration-300 snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/4'
             >
               <div className='relative mb-6'>
                 <div className='w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-blue-100'>
