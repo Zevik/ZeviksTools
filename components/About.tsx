@@ -38,17 +38,6 @@ export default function About() {
                 בנוסף, אם נתקלתם בצורך שאין לו פתרון פה, אתם מוזמנים לפנות אלי, ואנסה לענות לכם על הצורך.
               </p>
             </div>
-
-            {/* Contact Button */}
-            <div className="mt-10 text-center">
-              <a 
-                href="#contact"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 scroll-smooth"
-              >
-                <span>צרו קשר</span>
-                <i className="fas fa-arrow-left mr-2"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>
