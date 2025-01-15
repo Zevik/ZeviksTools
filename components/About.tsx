@@ -26,7 +26,7 @@ export default function About() {
 
             {/* Bio Content */}
             <div className="space-y-6 text-center leading-relaxed text-gray-600">
-              <h2>אודות &apos;זאביק&apos;</h2>
+              <h2>מי אני</h2>
               <p className="animate-fade-up [animation-delay:200ms]">
                 שמי &apos;זאביק&apos; אבינר ואני מנהל כמה מקבוצות הפייסבוק הגדולות בישראל. אני איש של יעילות והזמן שלי ושלכם יקר לי. לכן, אני וצוות מתכנתים, פיתחנו תוכנות לכל פעולה או צורך בפייסבוק ע&quot;מ לחסוך המון זמן והרבה אנרגיה.
               </p>
