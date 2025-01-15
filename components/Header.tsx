@@ -8,13 +8,13 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-md z-50">
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <Image src="/images/logo.png" alt="Zevik's Tools Logo" width={100} height={100} />
+            <Image src="/images/logo.png" alt="Zevik's Tools Logo" width={200} height={200} />
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex gap-6 ml-auto">
+          <nav className="ml-auto hidden md:flex gap-6">
             <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">בית</a>
             <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צור קשר</a>
