@@ -10,7 +10,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <Image src="/images/logo.png" alt="Zevik's Tools Logo" width={50} height={50} />
+            <Image src="/images/logo.png" alt="Zevik's Tools Logo" width={100} height={100} />
           </a>
 
           {/* Desktop Navigation */}
