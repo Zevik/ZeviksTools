@@ -13,7 +13,7 @@ export default function Header() {
           </a>;
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-6 ml-auto">
             <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">בית</a>
             <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צור קשר</a>
