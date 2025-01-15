@@ -137,11 +137,11 @@ export default function GmacPage() {
           </div>
         </section>
 
-        {/* Pricing Section - Add before FAQ section */}
+        {/* Pricing Section - Simplified */}
         <section className="py-16 bg-gradient-to-br from-indigo-50 to-purple-50">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center">
-              <div className="bg-white rounded-2xl shadow-xl p-8 transform hover:scale-[1.02] transition-all duration-300">
+              <div className="bg-white rounded-2xl shadow-xl p-8 transform transition-all duration-300">
                 <div className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-semibold mb-6">
                   5 ימי ניסיון חינם!
                 </div>
@@ -171,14 +171,6 @@ export default function GmacPage() {
                     <span>ללא התחייבות</span>
                   </li>
                 </ul>
-
-                <a 
-                  href="#contact"
-                  className="inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 transition-all w-full md:w-auto"
-                >
-                  <span>להתחיל עכשיו</span>
-                  <i className="fas fa-arrow-left"></i>
-                </a>
               </div>
             </div>
           </div>
