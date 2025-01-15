@@ -15,7 +15,7 @@ export default function Header() {
             <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות והתוספים</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צרו קשר</a>
           </nav>
-          <a href="/" className="flex items-center mx-auto">
+          <a href="/" className="flex items-center justify-center mx-auto">
             <Image src="/images/logo.png" alt="Zevik's Tools Logo" width={200} height={200} />
           </a>
 

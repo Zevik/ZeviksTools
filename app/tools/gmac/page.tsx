@@ -71,12 +71,7 @@ export default function GmacPage() {
       
       <main className="flex-grow pt-20">
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-indigo-600 to-indigo-900 text-white overflow-hidden">
-          {/* Animated Background Pattern */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.2)_50%,transparent_75%,transparent_100%)] bg-[length:60px_60px] animate-[gradient_3s_linear_infinite]" />
-          </div>
-          
+        <section className="relative py-20 bg-gradient-to-r from-blue-900/90 to-purple-900/90 text-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
@@ -87,9 +82,6 @@ export default function GmacPage() {
               </h1>
             </div>
           </div>
-          
-          {/* Decorative Elements */}
-          <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent" />
         </section>
 
         {/* How It Works */}

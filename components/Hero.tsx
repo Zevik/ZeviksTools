@@ -20,7 +20,7 @@ export default function Hero() {
               לבעלי עסקים ומנהלי קבוצות
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 animate-fade-up">
+          <p className="text-xl md:text-2xl text-gray-300 mb-2 animate-fade-up">
             לאיתור ולביצוע פעולות אוטומטיות בפייסבוק
           </p>
           {/* Remove Buttons */}
