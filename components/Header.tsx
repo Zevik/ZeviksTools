@@ -11,9 +11,9 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6">
-            <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">בית</a>
-            <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות</a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צור קשר</a>
+            <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">דף הבית</a>
+            <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות והתוספים</a>
+            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צרו קשר</a>
           </nav>
           <a href="/" className="flex items-center ml-auto">
             <Image src="/images/logo.png" alt="Zevik's Tools Logo" width={200} height={200} />
@@ -31,9 +31,9 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-4 flex flex-col gap-4">
-            <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">בית</a>
-            <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות</a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צור קשר</a>
+            <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">דף הבית</a>
+            <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות והתוספים</a>
+            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צרו קשר</a>
           </nav>
         )}
       </div>
