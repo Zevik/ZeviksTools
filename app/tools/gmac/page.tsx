@@ -18,7 +18,7 @@ const features = [
     icon: Briefcase
   },
   {
-    title: 'גיבוי שלם',
+    title: 'גיבוי מושלם',
     description: 'כל המידע נשמר בגוגל שיטס באופן מאובטח',
     icon: Shield
   }
