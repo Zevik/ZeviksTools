@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,9 +9,9 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-md z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <a href="/" className="text-2xl font-bold text-gray-800">
-            Zevik&apos;s Tools
-          </a>;
+          <a href="/" className="flex items-center">
+            <Image src="/images/logo.png" alt="Zevik's Tools Logo" width={50} height={50} />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-6 ml-auto">
