@@ -13,6 +13,7 @@ export default function Header() {
           <nav className="hidden md:flex gap-6">
             <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">דף הבית</a>
             <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות והתוספים</a>
+            <a href="/tools/recommended-tools" className="text-gray-600 hover:text-blue-600 transition-colors">כלים מומלצים</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צרו קשר</a>
           </nav>
           <a href="/" className="flex items-center justify-center mx-auto">
@@ -33,6 +34,7 @@ export default function Header() {
           <nav className="md:hidden py-4 flex flex-col gap-4">
             <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">דף הבית</a>
             <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">התוכנות והתוספים</a>
+            <a href="/tools/recommended-tools" className="text-gray-600 hover:text-blue-600 transition-colors">כלים מומלצים</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">צרו קשר</a>
           </nav>
         )}
