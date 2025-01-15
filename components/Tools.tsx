@@ -37,7 +37,7 @@ export default function Tools() {
               className="group flex flex-col bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500"
             >
               {/* Title with gradient background on hover */}
-              <div className="mb-6">
+              <div className="mb-6 text-center">
                 <h3 className="text-2xl font-bold mb-1 text-gray-800 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                   {tool.title[0]}
                 </h3>
