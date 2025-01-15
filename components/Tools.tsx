@@ -1,6 +1,6 @@
 const tools = [
   {
-    title: ['GMAC', 'איסוף ושמירת תשובות'],
+    title: ['GMAC', 'איסוף ושמירת תשובות הכניסה לקבוצה'],
     description: 'התוסף הפופולרי שאוסף ושומר את התשובות לשאלות הכניסה לקבוצה שלכם.',
     link: '/tools/gmac'
   },
@@ -31,8 +31,9 @@ export default function Tools() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tools.map((tool, index) => (
-            <div 
+            <a 
               key={index}
+              href={tool.link}
               className="group flex flex-col bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500"
             >
               {/* Title with gradient background on hover */}
@@ -49,20 +50,7 @@ export default function Tools() {
               <p className="text-gray-600 mb-8 leading-relaxed flex-grow">
                 {tool.description}
               </p>
-
-              {/* Link - Always at bottom */}
-              <div className="mt-auto">
-                <a 
-                  href={tool.link}
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium group-hover:translate-x-2 transition-all duration-300"
-                >
-                  <span className="border-b border-transparent group-hover:border-blue-600">
-                    למידע נוסף
-                  </span>
-                  <span className="transform mr-2">←</span>
-                </a>
-              </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
