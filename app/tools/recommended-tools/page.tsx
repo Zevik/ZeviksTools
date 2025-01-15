@@ -10,7 +10,7 @@ export default function RecommendedToolsPage() {
         {/* Section 1 */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">כותרת סקצ'ן ראשון</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">כותרת סקצ&#39;ן ראשון</h2>
             <p className="text-lg text-gray-600 text-center">
               טקסט דמי ראשון. כאן תוכלו להוסיף מידע על הכלים המומלצים שלכם.
             </p>
@@ -20,7 +20,7 @@ export default function RecommendedToolsPage() {
         {/* Section 2 */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">כותרת סקצ'ן שני</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">כותרת סקצ&#39;ן שני</h2>
             <p className="text-lg text-gray-600 text-center">
               טקסט דמי שני. כאן תוכלו להמשיך ולהרחיב על היתרונות של הכלים שאתם ממליצים עליהם.
             </p>
@@ -30,7 +30,7 @@ export default function RecommendedToolsPage() {
         {/* Section 3 */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">כותרת סקצ'ן שלישי</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">כותרת סקצ&#39;ן שלישי</h2>
             <p className="text-lg text-gray-600 text-center">
               טקסט דמי שלישי. תוכלו להוסיף קריאה לפעולה או מידע נוסף על איך להשתמש בכלים.
             </p>
