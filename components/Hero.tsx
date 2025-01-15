@@ -23,14 +23,7 @@ export default function Hero() {
           <p className="text-xl md:text-2xl text-gray-300 mb-12 animate-fade-up">
             לאיתור ולביצוע פעולות אוטומטיות בפייסבוק
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all transform hover:scale-105 hover:shadow-lg animate-fade-up">
-              גלה את הכלים
-            </button>
-            <button className="px-8 py-4 bg-white/10 text-white rounded-xl font-bold backdrop-blur-sm hover:bg-white/20 transition-all animate-fade-up">
-              צור קשר
-            </button>
-          </div>
+          {/* Remove Buttons */}
         </div>
       </div>
     </section>
