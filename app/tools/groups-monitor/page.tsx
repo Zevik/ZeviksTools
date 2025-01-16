@@ -107,7 +107,7 @@ export default function GroupsMonitorPage() {
         {/* Features Grid */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">למה GMAC?</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">למה GroupsMonitoring?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {features.map((Feature, index) => (
                 <div key={index} className="text-center p-6">
