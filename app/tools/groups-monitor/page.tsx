@@ -161,28 +161,16 @@ export default function GroupsMonitorPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-md mx-auto text-center">
               <div className="border border-gray-300 rounded-lg p-8 shadow-md">
-                <div className="mb-6">
-                  <span className="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-semibold">
-                    5 ימי ניסיון חינם!
-                  </span>
-                </div>
-                
+                {/* Updated monthly cost */}
                 <div className="mb-6">
                   <div className="text-gray-800 text-lg mb-2">עלות חודשית:</div>
                   <div className="flex items-baseline justify-center gap-4">
-                    <span className="text-4xl font-bold text-black">₪35</span>
-                    <span className="text-lg text-gray-500 line-through">₪55</span>
-                    <span className="text-sm text-yellow-700 font-semibold">
-                      חיסכון של 36%
-                    </span>
+                    <span className="text-4xl font-bold text-black">₪349</span>
                   </div>
                 </div>
 
+                {/* Updated features */}
                 <ul className="text-left space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <i className="fas fa-check text-green-500"></i>
-                    <span>5 ימי ניסיון ללא עלות</span>
-                  </li>
                   <li className="flex items-center gap-2">
                     <i className="fas fa-check text-green-500"></i>
                     <span>ביטול בכל עת</span>
