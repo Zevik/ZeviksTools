@@ -138,6 +138,22 @@ export default function GmacPage() {
             </div>
           </div>
         </section>
+        
+        {/* Chrome Installation Section */}
+        <section className="py-16 bg-gray-100">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-8">התקנה בדפדפן הכרום</h2>
+            <p className="text-lg text-gray-600 mb-4">התקינו את GMAC בקליק אחד בדפדפן כרום שלך!</p>
+            <a 
+              href="https://chromewebstore.google.com/detail/gmac-%E2%80%94-group-answers-coll/omefdeapnicniondiefejngddkjikegn" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              התקן כרום
+            </a>
+          </div>
+        </section>
 
         {/* Pricing Section - Redesigned */}
         <section className="py-16 bg-white">
