@@ -9,17 +9,17 @@ import { useState } from 'react';
 const features = [
   {
     title: 'חיסכון בזמן',
-    description: 'איסוף אוטומטי של כל התשובות בלחיצת כפתור',
+    description: 'שבועות של חיפוש הופכות לדקות.',
     icon: Clock
   },
   {
     title: 'פעולה מהירה',
-    description: 'שמירת המידע באופן מיידי וללא עיכובים',
+    description: 'לא מפספסים אף הזדמנות עסקית.',
     icon: Briefcase
   },
   {
     title: 'גיבוי מושלם',
-    description: 'כל המידע נשמר בגוגל שיטס באופן מאובטח',
+    description: 'אוטומציה חכמה\nהטכנולוגיה עובדת בשבילכם 24/7.',
     icon: Shield
   }
 ];
