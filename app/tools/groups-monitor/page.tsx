@@ -76,7 +76,7 @@ export default function GroupsMonitorPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-                סקאן-גרופ - סורקת קבוצות מוצאת לקוחות - Groups Monitor
+                סורקת קבוצות מוצאת לקוחות - GroupsMonitoring
                 <span className="block text-2xl md:text-3xl text-indigo-200 mt-4 opacity-0 animate-[fadeIn_0.5s_ease-out_0.3s_forwards]">
                   הכלי החזק ביותר לניטור קבוצות פייסבוק, עבור עסקים ונותני שירות
                 </span>
