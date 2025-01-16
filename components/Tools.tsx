@@ -7,7 +7,7 @@ const tools = [
   {
     title: ['Groups Monitor', 'סקאן-גרופ'],
     description: 'הכלי החזק והיעיל ביותר לניטור קבוצות פייסבוק, עבור עסקים ונותני שירות בפייסבוק!',
-    link: 'https://zevikstools.netlify.app/tools/groups-monitor'
+    link: '/tools/groups-monitor'
   },
   {
     title: ['Reply Comments', 'מכונת התגובות המבריקה'],
