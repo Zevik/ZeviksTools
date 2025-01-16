@@ -123,30 +123,20 @@ export default function GroupsMonitorPage() {
         {/* Video Demo */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">ראו את GMAC בפעולה</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">GroupsMonitoring בפעולה</h2>
             <div className="max-w-4xl mx-auto">
               <VideoPlayer videoId="mLnXlkmy84Q" />
             </div>
           </div>
         </section>
 
-        {/* Installation Video */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">איך מתקינים בקלות?</h2>
-            <div className="max-w-4xl mx-auto">
-              <VideoPlayer videoId="-yxpUam5LRA" />
-            </div>
-          </div>
-        </section>
-        
         {/* Chrome Installation Section */}
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8">התקנה בדפדפן הכרום</h2>
             <p className="text-lg text-gray-600 mb-4">התקינו את התוסף בקליק אחד</p>
             <a 
-              href="https://chromewebstore.google.com/detail/gmac-%E2%80%94-group-answers-coll/omefdeapnicniondiefejngddkjikegn" 
+              href="https://chromewebstore.google.com/detail/groupsmonitoring/hhkacbdgmmhlbfkfmlddnbaimkopgibk?authuser=0&hl=en-GB" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
