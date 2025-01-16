@@ -139,16 +139,6 @@ export default function GmacPage() {
           </div>
         </section>
 
-        {/* Installation Video */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">איך מתקינים בקלות?</h2>
-            <div className="max-w-4xl mx-auto">
-              <VideoPlayer videoId="-yxpUam5LRA" />
-            </div>
-          </div>
-        </section>
-
         {/* Pricing Section - Redesigned */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
