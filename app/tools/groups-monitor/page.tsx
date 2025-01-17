@@ -5,6 +5,7 @@ import FaqAccordion from '@/components/FaqAccordion';
 import VideoPlayer from '@/components/VideoPlayer';
 import { Briefcase, Shield, Clock } from 'lucide-react';
 import { useState } from 'react';
+import { groupsMonitorFaqItems } from './groupsMonitorFaq';
 
 const features = [
   {
@@ -180,7 +181,7 @@ export default function GroupsMonitorPage() {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">שאלות נפוצות</h2>
             <div className="max-w-3xl mx-auto">
-              <FaqAccordion />
+              <FaqAccordion faqItems={groupsMonitorFaqItems} />
             </div>
           </div>
         </section>
