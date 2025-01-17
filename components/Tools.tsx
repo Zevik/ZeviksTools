@@ -12,7 +12,7 @@ const tools = [
   {
     title: ['Reply Comments', 'מכונת התגובות המבריקה'],
     description: 'התוסף הכי פופולרי! כתבתם פוסט וקיבלתם מאות תגובות? התוסף יגיב לכל התגובות ויתייג את המגיב.',
-    link: '/reply-comments'
+    link: '/tools/reply-comments'
   }
 ];
 
