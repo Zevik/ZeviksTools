@@ -1,4 +1,3 @@
-
 'use client';
 
 import Header from '@/components/Header';
@@ -167,7 +166,7 @@ export default function ReplyCommentsPage() {
                     <span>ביטול בכל עת</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <i class="fas fa-check text-green-500"></i>
+                    <i className="fas fa-check text-green-500"></i>
                     <span>ללא התחייבות</span>
                   </li>
                 </ul>
