@@ -178,42 +178,7 @@ export default function ReplyCommentsPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">שאלות נפוצות</h2>
-            <div className="max-w-3xl mx-auto">
-              <div className="space-y-6">
-                <div className="faq-item">
-                  <h3 className="text-xl font-semibold">שאלה: האם ניתן להגיב לכל פוסט בפייסבוק או רק לפוסטים שלי?</h3>
-                  <p className="mt-2 text-gray-600">תשובה: ניתן להגיב לכל פוסט, לא משנה אם אתם העלתם אותו או לא.</p>
-                </div>
-                <div className="faq-item">
-                  <h3 className="text-xl font-semibold">שאלה: האם ניתן להגיב לפוסטים בכל קבוצה גם שאני לא מנהל/ת?</h3>
-                  <p className="mt-2 text-gray-600">תשובה: כן.</p>
-                </div>
-                <div className="faq-item">
-                  <h3 className="text-xl font-semibold">שאלה: האם התוסף יגיב לאותה תגובה פעמיים?</h3>
-                  <p className="mt-2 text-gray-600">תשובה: התוסף יגיב רק לתגובות שאין להם שום תגובה. אם יש להם כבר תגובה, לא משנה מי כתב אותה, התוסף לא יגיב. ישנה אפשרות נוספת, להגדיר שהתוסף יגיב לכל משתמש רק פעם אחת, ואז התוסף יגיב לכולם, לא משנה אם יש להם תגובה או לא.</p>
-                </div>
-                <div className="faq-item">
-                  <h3 className="text-xl font-semibold">שאלה: האם יש סכנה שפייסבוק יחסום אותי?</h3>
-                  <p className="mt-2 text-gray-600">תשובה: אנחנו לא נתקלנו מעולם במקרה כזה. הדבר היחיד שעלול לקרות הוא השעייה זמנית (לכמה שעות) לפעולה הספציפית של תגובות בפייסבוק. שאר הפעולות לא יושעו, וגם זה נדיר ביותר, ובשביל זה אנחנו מגדירים הפסקות בהגדרות התוסף.</p>
-                </div>
-                <div className="faq-item">
-                  <h3 className="text-xl font-semibold">שאלה: האם המחשב שלי צריך להיות דלוק?</h3>
-                  <p className="mt-2 text-gray-600">תשובה: התוסף פועל על דפדפן הכרום שלכם ועליו להיות פתוח. אם תסגרו את דפדפן הכרום שעליו פועל התוסף או שהמחשב יכנס למצב שינה, התוסף יעצור.</p>
-                </div>
-                <div className="faq-item">
-                  <h3 className="text-xl font-semibold">שאלה: האם ניתן להגיב בכל שפה?</h3>
-                  <p className="mt-2 text-gray-600">תשובה: כן.</p>
-                </div>
-                <div className="faq-item">
-                  <h3 className="text-xl font-semibold">שאלה: איך ומתי ניתן לבטל את המנוי?</h3>
-                  <p className="mt-2 text-gray-600">תשובה: המנוי הוא חודשי והוא מתחדש מדי חודש באותו היום שבו התחלתם את המנוי. ניתן לפנות אלי עד 24 שעות לפני חידוש המנוי על מנת לבטלו.</p>
-                </div>
-                <div className="faq-item">
-                  <h3 className="text-xl font-semibold">שאלה: מה ההמלצה לכמות ולקצב תגובות על ידי התוסף?</h3>
-                  <p className="mt-2 text-gray-600">תשובה: ההמלצה שלי היא להגיב עד כ-100 תגובות ביום, עם הפרש זמן של כ-2-3 דקות בין התגובות.</p>
-                </div>
-              </div>
-            </div>
+            <FaqAccordion />
           </div>
         </section>
 
