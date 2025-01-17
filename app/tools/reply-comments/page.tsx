@@ -207,4 +207,38 @@ export default function ReplyCommentsPage() {
                 </ul>
               </div>
             </div>
-          </div>          </div>        </section>        {/* FAQ Section */}        <section className="py-16 bg-white">          <div className="container mx-auto px-4">            <h2 className="text-3xl font-bold text-center mb-12">שאלות נפוצות</h2>            <div className="max-w-3xl mx-auto">              <FaqAccordion faqItems={replyCommentsFaqItems} />            </div>          </div>        </section>        {/* Contact Section */}        <section className="py-16 bg-indigo-50">          <div className="container mx-auto px-4 text-center">            <h2 className="text-3xl font-bold mb-8">רוצים להתחיל?</h2>            <div className="flex flex-col sm:flex-row gap-4 justify-center">              <a                 href="https://wa.me/972546609385"                target="_blank"                rel="noopener noreferrer"                className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition-all"              >                <i className="fab fa-whatsapp text-xl"></i>                ליצירת קשר בוואטסאפ              </a>              <CopyEmailButton />            </div>          </div>        </section>      </main>    </div>  );}
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">שאלות נפוצות</h2>
+            <div className="max-w-3xl mx-auto">
+              <FaqAccordion faqItems={replyCommentsFaqItems} />
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-16 bg-indigo-50">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold mb-8">רוצים להתחיל?</h2>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="https://wa.me/972546609385"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition-all"
+              >
+                <i className="fab fa-whatsapp text-xl"></i>
+                ליצירת קשר בוואטסאפ
+              </a>
+              <CopyEmailButton />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
