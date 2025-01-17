@@ -31,41 +31,6 @@ const steps = [
   'התוסף יכתוב תגובות לכל התגובות, אחת אחרי השניה.'
 ];
 
-const replyCommentsFaqItems = [
-  {
-    question: 'האם ניתן להגיב לכל פוסט בפייסבוק או רק לפוסטים שלי?',
-    answer: 'ניתן להגיב לכל פוסט, לא משנה אם אתם העלתם אותו או לא.'
-  },
-  {
-    question: 'האם ניתן להגיב לפוסטים בכל קבוצה גם שאני לא מנהל/ת?',
-    answer: 'כן.'
-  },
-  {
-    question: 'האם התוסף יגיב לאותה תגובה פעמיים?',
-    answer: 'התוסף יגיב רק לתגובות שאין להם שום תגובה. אם יש להם כבר תגובה, לא משנה מי כתב אותה, התוסף לא יגיב. ישנה אפשרות נוספת, להגדיר שהתוסף יגיב לכל משתמש רק פעם אחת, ואז התוסף יגיב לכולם, לא משנה אם יש להם תגובה או לא.'
-  },
-  {
-    question: 'האם יש סכנה שפייסבוק יחסום אותי?',
-    answer: 'אנחנו לא נתקלנו מעולם במקרה כזה. הדבר היחיד שעלול לקרות הוא השעייה זמנית (לכמה שעות) לפעולה הספציפית של תגובות בפייסבוק. שאר הפעולות לא יושעו, וגם זה נדיר ביותר, ובשביל זה אנחנו מגדירים הפסקות בהגדרות התוסף.'
-  },
-  {
-    question: 'האם המחשב שלי צריך להיות דלוק?',
-    answer: 'התוסף פועל על דפדפן הכרום שלכם ועליו להיות פתוח. אם תסגרו את דפדפן הכרום שעליו פועל התוסף או שהמחשב יכנס למצב שינה, התוסף יעצור.'
-  },
-  {
-    question: 'האם ניתן להגיב בכל שפה?',
-    answer: 'כן.'
-  },
-  {
-    question: 'איך ומתי ניתן לבטל את המנוי?',
-    answer: 'המנוי הוא חודשי והוא מתחדש מדי חודש באותו היום שבו התחלתם את המנוי. ניתן לפנות אלי עד 24 שעות לפני חידוש המנוי על מנת לבטלו.'
-  },
-  {
-    question: 'מה ההמלצה לכמות ולקצב תגובות על ידי התוסף?',
-    answer: 'ההמלצה שלי היא להגיב עד כ-100 תגובות ביום, עם הפרש זמן של כ-2-3 דקות בין התגובות.'
-  }
-];
-
 function CopyEmailButton() {
   const email = 'fb.tools.zevik@gmail.com';
   const [copied, setCopied] = useState(false);
@@ -125,6 +90,41 @@ export default function ReplyCommentsPage() {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">איך התוסף עובד</h2>
             <div className="max-w-3xl mx-auto">
+              <div className="space-y-8">
+                {steps.map((step, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center">
+                      {index + 1}
+                    </div>
+                    <p className="text-lg">{step}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Grid */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">למה ReplyComments?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {features.map((Feature, index) => (
+                <div key={index} className="text-center p-6">
+                  <Feature.icon className="w-12 h-12 text-indigo-600 mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2">{Feature.title}</h3>
+                  <p className="text-gray-600">{Feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Video Demo */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">ReplyComments בפעולה</h2>
+            <div className="max-w-4xl mx-auto">
               <div className="space-y-8">
                 {steps.map((step, index) => (
                   <div key={index} className="flex items-start gap-4">
