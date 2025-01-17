@@ -56,7 +56,7 @@ export default function FaqAccordion() {
       {faqItems.map((item, index) => (
         <div 
           key={index}
-          className="bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-100 hover:border-indigo-100 transition-all duration-500 ease-in-out"
+          className="bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-100 hover:border-indigo-100 transition-all duration-500 ease-in-out max-w-full"
         >
           <button
             className="w-full px-8 py-6 text-right flex items-center justify-between group"
