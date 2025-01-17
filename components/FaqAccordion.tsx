@@ -74,16 +74,13 @@ export default function FaqAccordion() {
           
           <div 
             id={`faq-answer-${index}`}
-            style={{ 
-              maxHeight: openIndex === index ? '1000px' : '0',
-              opacity: openIndex === index ? 1 : 0,
-              transition: 'all 0.7s cubic-bezier(0.4, 0, 0.2, 1)'
-            }}
-            className="overflow-hidden"
+            className={`overflow-hidden transition-all duration-500 ease ${
+              openIndex === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+            }`}
           >
             <div 
-              className={`px-8 pb-6 text-gray-600 transform transition-all duration-700 ease-in-out ${
-                openIndex === index ? 'translate-y-0' : '-translate-y-4'
+              className={`px-8 pb-6 text-gray-600 transition-transform duration-500 ease-in-out ${
+                openIndex === index ? 'translate-y-0' : '-translate-y-2'
               }`}
             >
               <p className="leading-relaxed">
