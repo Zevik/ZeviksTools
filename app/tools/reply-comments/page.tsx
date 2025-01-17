@@ -9,26 +9,25 @@ import { useState } from 'react';
 const features = [
   {
     title: 'חיסכון בזמן',
-    description: 'שבועות של חיפוש הופכות לדקות.',
+    description: 'להגיב למאות תגובות בלחיצת כפתור במקום שעות של עבודה!',
     icon: Clock
   },
   {
-    title: 'פעולה מהירה',
-    description: 'לא מפספסים אף הזדמנות עסקית.',
+    title: 'מניעת חסימות:',
+    description: 'מגדירים את התוסף לעבוד בקצב איטי למנוע השעיה ע"י פייסבוק.',
     icon: Briefcase
   },
   {
-    title: 'גיבוי מושלם',
-    description: 'אוטומציה חכמה\nהטכנולוגיה עובדת בשבילכם 24/7.',
+    title: 'גמישות מקסימלית',
+    description: 'התאמת התגובות והקצב לצרכים שלנו.',
     icon: Shield
   }
 ];
 
 const steps = [
-  'בחרו את מילות החיפוש ואת הקבוצות שתרצו.',
-  'התוסף יסרוק את הקבוצות 24/7 במקומכם.',
-  'כל פוסט רלוונטי יועבר ישירות ל- GoogleSheets שלכם.',
-  'התראות חכמות: קבלו עדכון למייל על כל פוסט חדש.'
+  'בחרו את הפוסט הרצוי.',
+  'רשמו את התגובות הרצויות.',
+  'התוסף יכתוב תגובות לכל התגובות, אחת אחרי השניה.'
 ];
 
 function CopyEmailButton() {
@@ -76,9 +75,9 @@ export default function ReplyCommentsPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-                סורקת קבוצות מוצאת לקוחות - ReplyComments
+                מכונת התגובות - ReplyComments
                 <span className="block text-2xl md:text-3xl text-indigo-200 mt-4 opacity-0 animate-[fadeIn_0.5s_ease-out_0.3s_forwards]">
-                  הכלי החזק ביותר לניטור קבוצות פייסבוק, עבור עסקים ונותני שירות
+                  תגובות לכל התגובות בכל פוסט שתבחרו
                 </span>
               </h1>
             </div>
@@ -136,7 +135,7 @@ export default function ReplyCommentsPage() {
             <h2 className="text-3xl font-bold mb-8">התקנה בדפדפן הכרום</h2>
             <p className="text-lg text-gray-600 mb-4">התקינו את התוסף בקליק אחד</p>
             <a 
-              href="https://chromewebstore.google.com/detail/groupsmonitoring/hhkacbdgmmhlbfkfmlddnbaimkopgibk?authuser=0&hl=en-GB" 
+              href="https://chromewebstore.google.com/detail/replyallcomments/nndlamggeoglkbnpgipbhciechdnbpcg" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -155,7 +154,7 @@ export default function ReplyCommentsPage() {
                 <div className="mb-6">
                   <div className="text-gray-800 text-lg mb-2">עלות חודשית:</div>
                   <div className="flex items-baseline justify-center gap-4">
-                    <span className="text-4xl font-bold text-black">₪349</span>
+                    <span className="text-4xl font-bold text-black">₪299</span>
                   </div>
                 </div>
 
@@ -180,7 +179,40 @@ export default function ReplyCommentsPage() {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">שאלות נפוצות</h2>
             <div className="max-w-3xl mx-auto">
-              <FaqAccordion />
+              <div className="space-y-6">
+                <div className="faq-item">
+                  <h3 className="text-xl font-semibold">שאלה: האם ניתן להגיב לכל פוסט בפייסבוק או רק לפוסטים שלי?</h3>
+                  <p className="mt-2 text-gray-600">תשובה: ניתן להגיב לכל פוסט, לא משנה אם אתם העלתם אותו או לא.</p>
+                </div>
+                <div className="faq-item">
+                  <h3 className="text-xl font-semibold">שאלה: האם ניתן להגיב לפוסטים בכל קבוצה גם שאני לא מנהל/ת?</h3>
+                  <p className="mt-2 text-gray-600">תשובה: כן.</p>
+                </div>
+                <div className="faq-item">
+                  <h3 className="text-xl font-semibold">שאלה: האם התוסף יגיב לאותה תגובה פעמיים?</h3>
+                  <p className="mt-2 text-gray-600">תשובה: התוסף יגיב רק לתגובות שאין להם שום תגובה. אם יש להם כבר תגובה, לא משנה מי כתב אותה, התוסף לא יגיב. ישנה אפשרות נוספת, להגדיר שהתוסף יגיב לכל משתמש רק פעם אחת, ואז התוסף יגיב לכולם, לא משנה אם יש להם תגובה או לא.</p>
+                </div>
+                <div className="faq-item">
+                  <h3 className="text-xl font-semibold">שאלה: האם יש סכנה שפייסבוק יחסום אותי?</h3>
+                  <p className="mt-2 text-gray-600">תשובה: אנחנו לא נתקלנו מעולם במקרה כזה. הדבר היחיד שעלול לקרות הוא השעייה זמנית (לכמה שעות) לפעולה הספציפית של תגובות בפייסבוק. שאר הפעולות לא יושעו, וגם זה נדיר ביותר, ובשביל זה אנחנו מגדירים הפסקות בהגדרות התוסף.</p>
+                </div>
+                <div className="faq-item">
+                  <h3 className="text-xl font-semibold">שאלה: האם המחשב שלי צריך להיות דלוק?</h3>
+                  <p className="mt-2 text-gray-600">תשובה: התוסף פועל על דפדפן הכרום שלכם ועליו להיות פתוח. אם תסגרו את דפדפן הכרום שעליו פועל התוסף או שהמחשב יכנס למצב שינה, התוסף יעצור.</p>
+                </div>
+                <div className="faq-item">
+                  <h3 className="text-xl font-semibold">שאלה: האם ניתן להגיב בכל שפה?</h3>
+                  <p className="mt-2 text-gray-600">תשובה: כן.</p>
+                </div>
+                <div className="faq-item">
+                  <h3 className="text-xl font-semibold">שאלה: איך ומתי ניתן לבטל את המנוי?</h3>
+                  <p className="mt-2 text-gray-600">תשובה: המנוי הוא חודשי והוא מתחדש מדי חודש באותו היום שבו התחלתם את המנוי. ניתן לפנות אלי עד 24 שעות לפני חידוש המנוי על מנת לבטלו.</p>
+                </div>
+                <div className="faq-item">
+                  <h3 className="text-xl font-semibold">שאלה: מה ההמלצה לכמות ולקצב תגובות על ידי התוסף?</h3>
+                  <p className="mt-2 text-gray-600">תשובה: ההמלצה שלי היא להגיב עד כ-100 תגובות ביום, עם הפרש זמן של כ-2-3 דקות בין התגובות.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
