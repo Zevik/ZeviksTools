@@ -5,6 +5,7 @@ import FaqAccordion from '@/components/FaqAccordion';
 import VideoPlayer from '@/components/VideoPlayer';
 import { Briefcase, Shield, Clock } from 'lucide-react';
 import { useState } from 'react';
+import { replyCommentsFaqItems } from './replyCommentsFaq';
 
 const features = [
   {
@@ -28,6 +29,41 @@ const steps = [
   'בחרו את הפוסט הרצוי.',
   'רשמו את התגובות הרצויות.',
   'התוסף יכתוב תגובות לכל התגובות, אחת אחרי השניה.'
+];
+
+const replyCommentsFaqItems = [
+  {
+    question: 'האם ניתן להגיב לכל פוסט בפייסבוק או רק לפוסטים שלי?',
+    answer: 'ניתן להגיב לכל פוסט, לא משנה אם אתם העלתם אותו או לא.'
+  },
+  {
+    question: 'האם ניתן להגיב לפוסטים בכל קבוצה גם שאני לא מנהל/ת?',
+    answer: 'כן.'
+  },
+  {
+    question: 'האם התוסף יגיב לאותה תגובה פעמיים?',
+    answer: 'התוסף יגיב רק לתגובות שאין להם שום תגובה. אם יש להם כבר תגובה, לא משנה מי כתב אותה, התוסף לא יגיב. ישנה אפשרות נוספת, להגדיר שהתוסף יגיב לכל משתמש רק פעם אחת, ואז התוסף יגיב לכולם, לא משנה אם יש להם תגובה או לא.'
+  },
+  {
+    question: 'האם יש סכנה שפייסבוק יחסום אותי?',
+    answer: 'אנחנו לא נתקלנו מעולם במקרה כזה. הדבר היחיד שעלול לקרות הוא השעייה זמנית (לכמה שעות) לפעולה הספציפית של תגובות בפייסבוק. שאר הפעולות לא יושעו, וגם זה נדיר ביותר, ובשביל זה אנחנו מגדירים הפסקות בהגדרות התוסף.'
+  },
+  {
+    question: 'האם המחשב שלי צריך להיות דלוק?',
+    answer: 'התוסף פועל על דפדפן הכרום שלכם ועליו להיות פתוח. אם תסגרו את דפדפן הכרום שעליו פועל התוסף או שהמחשב יכנס למצב שינה, התוסף יעצור.'
+  },
+  {
+    question: 'האם ניתן להגיב בכל שפה?',
+    answer: 'כן.'
+  },
+  {
+    question: 'איך ומתי ניתן לבטל את המנוי?',
+    answer: 'המנוי הוא חודשי והוא מתחדש מדי חודש באותו היום שבו התחלתם את המנוי. ניתן לפנות אלי עד 24 שעות לפני חידוש המנוי על מנת לבטלו.'
+  },
+  {
+    question: 'מה ההמלצה לכמות ולקצב תגובות על ידי התוסף?',
+    answer: 'ההמלצה שלי היא להגיב עד כ-100 תגובות ביום, עם הפרש זמן של כ-2-3 דקות בין התגובות.'
+  }
 ];
 
 function CopyEmailButton() {
@@ -171,38 +207,4 @@ export default function ReplyCommentsPage() {
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">שאלות נפוצות</h2>
-            <div className="max-w-2xl mx-auto">
-              <FaqAccordion />
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section className="py-16 bg-indigo-50">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8">רוצים להתחיל?</h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://wa.me/972546609385"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition-all"
-              >
-                <i className="fab fa-whatsapp text-xl"></i>
-                ליצירת קשר בוואטסאפ
-              </a>
-              <CopyEmailButton />
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-  );
-}
+          </div>          </div>        </section>        {/* FAQ Section */}        <section className="py-16 bg-white">          <div className="container mx-auto px-4">            <h2 className="text-3xl font-bold text-center mb-12">שאלות נפוצות</h2>            <div className="max-w-3xl mx-auto">              <FaqAccordion faqItems={replyCommentsFaqItems} />            </div>          </div>        </section>        {/* Contact Section */}        <section className="py-16 bg-indigo-50">          <div className="container mx-auto px-4 text-center">            <h2 className="text-3xl font-bold mb-8">רוצים להתחיל?</h2>            <div className="flex flex-col sm:flex-row gap-4 justify-center">              <a                 href="https://wa.me/972546609385"                target="_blank"                rel="noopener noreferrer"                className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition-all"              >                <i className="fab fa-whatsapp text-xl"></i>                ליצירת קשר בוואטסאפ              </a>              <CopyEmailButton />            </div>          </div>        </section>      </main>    </div>  );}
